@@ -1,12 +1,12 @@
 import graphene
 from flask import Flask
 from flask_graphql import GraphQLView
-from .schema import Query
+from .schema import Query,Mutation
 
 app = Flask(__name__)
 
 # Define the GraphQL schema
-schemas = graphene.Schema(query=Query)
+schemas = graphene.Schema(query=Query,mutation=Mutation)
 
 # Add GraphQL route
 app.add_url_rule(
