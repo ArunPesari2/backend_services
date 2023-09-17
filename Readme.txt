@@ -13,4 +13,6 @@ git commit -m 'message':
     in your local repository you are commiting the changes
 git push origin branch_name:
     pushes your branch to remote repository 
+git pull origin branch_name:
+    pull the remote repository changes to local branch_name
 
